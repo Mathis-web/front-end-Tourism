@@ -88,6 +88,7 @@ header nav a {
     background-size: cover;
     background-position: center;
     height: 450px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,6 +97,7 @@ header nav a {
 #about {
     display: flex;
     justify-content: center;
+    margin: 60px 0;
 }
 
 #photoAbout {
@@ -107,11 +109,12 @@ header nav a {
     background-color: white;
     width: 35%;
     text-align: center;
-    padding: 40px
+    padding: 40px;
 }
 
 #aboutTexte h3 {
-    font-size: 1.4em
+    font-size: 1.4em;
+    margin-top: 20px
 }
 
 #aboutTexte p {
@@ -279,4 +282,26 @@ header nav a {
 
 #logoReseaux img {
     margin-left: 20px;
+}
+
+
+@media all and (max-width: 700px) {
+    
+    header nav a {letter-spacing: 1px; font-size: 14px;}
+    
+    #carte {margin-left: 14%;}
+    
+    #about {flex-direction: column; align-items: center; margin: 30px 0;}
+    #aboutTexte {width: 36%;}
+    
+    #section3{flex-direction: column; align-items: center;}
+    .blocs{width: 50%; margin: 15px;}
+    
+    #blockHotel {flex-direction: column; align-items: center}
+    .hotels{width: 65%; margin-top: 50px}
+    #section5 h1{margin: 0;}
+    
+    #navFooter a {display: block; text-align: center; font-size: 13px;}
+    #logoReseaux {display: flex}
+    #tourism{margin: 10px auto}
 }
